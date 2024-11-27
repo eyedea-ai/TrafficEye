@@ -112,7 +112,7 @@ if __name__ == "__main__":
     NET_ADDRESS = "https://trafficeye.ai/"
     API_KEY = "YOUR_API_KEY"
 
-    if IMAGE_PATH == Path("") or API_KEY == "":
+    if IMAGE_PATH == Path("") or IMAGE_PATH == "YOUR_IMAGE_PATH" or API_KEY == "" or API_KEY == "YOUR_API_KEY":
         raise ValueError("You must set your API key and image path prior to running this script.")
 
     client = MmrApiClient(NET_ADDRESS)
